@@ -158,6 +158,8 @@
 		2FC253061936CDC800C6C660 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2527D1936CDC800C6C660 /* DDXMLNode.m */; };
 		2FC253071936CDC800C6C660 /* build-libidn.sh in Resources */ = {isa = PBXBuildFile; fileRef = 2FC252811936CDC800C6C660 /* build-libidn.sh */; };
 		2FC2530B1936CF0A00C6C660 /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC252831936CDC800C6C660 /* libidn.a */; };
+		2FC2530D1936D8C900C6C660 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC2530C1936D8C900C6C660 /* Login.storyboard */; };
+		2FC253181936DA2E00C6C660 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC253171936DA2E00C6C660 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -467,6 +469,9 @@
 		2FC252831936CDC800C6C660 /* libidn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libidn.a; sourceTree = "<group>"; };
 		2FC252841936CDC800C6C660 /* stringprep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringprep.h; sourceTree = "<group>"; };
 		2FC253091936CDF000C6C660 /* XMPPFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPFramework.h; sourceTree = "<group>"; };
+		2FC2530C1936D8C900C6C660 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		2FC253161936DA2E00C6C660 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		2FC253171936DA2E00C6C660 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -549,6 +554,9 @@
 				2FC251001936CAF500C6C660 /* ViewController.m */,
 				2FC251021936CAF500C6C660 /* Images.xcassets */,
 				2FC250F11936CAF500C6C660 /* Supporting Files */,
+				2FC2530C1936D8C900C6C660 /* Login.storyboard */,
+				2FC253161936DA2E00C6C660 /* LoginViewController.h */,
+				2FC253171936DA2E00C6C660 /* LoginViewController.m */,
 			);
 			path = XMPP;
 			sourceTree = "<group>";
@@ -1473,6 +1481,7 @@
 			files = (
 				2FC253071936CDC800C6C660 /* build-libidn.sh in Resources */,
 				2FC251031936CAF500C6C660 /* Images.xcassets in Resources */,
+				2FC2530D1936D8C900C6C660 /* Login.storyboard in Resources */,
 				2FC250F51936CAF500C6C660 /* InfoPlist.strings in Resources */,
 				2FC253021936CDC800C6C660 /* README.txt in Resources */,
 				2FC250FE1936CAF500C6C660 /* Main.storyboard in Resources */,
@@ -1498,6 +1507,7 @@
 				2FC252871936CDC800C6C660 /* XMPPDeprecatedPlainAuthentication.m in Sources */,
 				2FC252CD1936CDC800C6C660 /* TURNSocket.m in Sources */,
 				2FC2529D1936CDC800C6C660 /* XMPPReconnect.m in Sources */,
+				2FC253181936DA2E00C6C660 /* LoginViewController.m in Sources */,
 				2FC251011936CAF500C6C660 /* ViewController.m in Sources */,
 				2FC252D81936CDC800C6C660 /* XMPPCapsCoreDataStorageObject.m in Sources */,
 				2FC252F71936CDC800C6C660 /* XMPPSRVResolver.m in Sources */,

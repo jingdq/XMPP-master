@@ -43,4 +43,46 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+
+#pragma mark -- XMPP相关
+
+- (void)setupStream
+{
+
+    _xmppStream = [[XMPPStream alloc]init];
+    [_xmppStream addDelegate:self delegateQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)];
+    
+    
+}
+
+- (void)goOnline{
+    XMPPPresence *presence = [XMPPPresence presence];
+    
+    [_xmppStream sendElement:presence];
+    
+    
+}
+
+- (void)goOffline {
+    XMPPPresence *presence = [XMPPPresence presenceWithType:@"unavailable"];
+    [_xmppStream sendElement:presence];
+}
+
+- (void)connent
+{
+    [self setupStream];
+    [_xmppStream setMyJID:[XMPPJID jidWithString:@"zhuhl@localhost"]];
+    
+    [_xmppStream setHostName:@"192.168.0.142"];
+    
+    
+    
+}
+
+- (void)disconnent
+{
+ 
+}
+
 @end
